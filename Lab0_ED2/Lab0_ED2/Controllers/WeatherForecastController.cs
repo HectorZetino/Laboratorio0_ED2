@@ -22,7 +22,7 @@ namespace Lab0_ED2.Controllers
         {
             _logger = logger;
         }
-
+        //decorador
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {

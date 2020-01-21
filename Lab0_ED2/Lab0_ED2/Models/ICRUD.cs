@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace Lab0_ED2.Models
 {
-    interface ICRUD
+    public interface ICRUD
     {
-        public void add(Movie movie);
+        public void Add(Movie movie);
         public List<Movie> ReturnList();
     }
 }

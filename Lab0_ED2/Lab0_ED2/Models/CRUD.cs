@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Lab0_ED2.Models
 {
-    public class CRUD
+    public class CRUD : ICRUD
     {
         public List<Movie> Movies = new List<Movie>();
 
