@@ -9,5 +9,6 @@ namespace Lab0_ED2.Models
     {
         public void Add(Movie movie);
         public List<Movie> ReturnList();
+
     }
 }
