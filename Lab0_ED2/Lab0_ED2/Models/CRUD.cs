@@ -11,13 +11,16 @@ namespace Lab0_ED2.Models
         public List<Movie> MoviesComodin = new List<Movie>();
         
         public void Add(Movie New_Movie) {
+            
             if (Movies.Count <=9)
             {
                 Movies.Add(New_Movie);
             }
             else
             {
-                MoviesComodin.Add(New_Movie);
+                Movies.Reverse();
+                Movies.RemoveAt(0);
+                Movies.Add(New_Movie);
             }
         
         }
