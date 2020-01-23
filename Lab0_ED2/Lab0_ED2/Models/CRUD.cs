@@ -18,7 +18,7 @@ namespace Lab0_ED2.Models
             }
             else
             {
-                Movies.Reverse();
+                MoviesComodin.Add(Movies.ElementAt<Movie>(0));//los elementos que salen de Movies se agregan en la MoviesComodin, para no perder el valor.
                 Movies.RemoveAt(0);
                 Movies.Add(New_Movie);
             }
@@ -26,7 +26,7 @@ namespace Lab0_ED2.Models
         }
 
         public List<Movie> ReturnList() {
-            Movies.Reverse();
+            Movies.Reverse();//se mostraran primero los datos que se ingresaron de ultimo
             return Movies;
 
         }
